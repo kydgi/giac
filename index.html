@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>GIAC Presentations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Edu+SA+Beginner:wght@400..700&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="https://uky-gis.github.io/geo509/slides/dist/reset.css" />
+    <link rel="stylesheet" href="https://uky-gis.github.io/geo509/slides/dist/reveal.css" />
+    <link rel="stylesheet" href="https://uky-gis.github.io/geo509/slides/dist/theme/league-109.css" id="theme" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="https://uky-gis.github.io/geo509/slides/dist/plugin/highlight/zenburn.css"
+        id="highlight-theme" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="reveal">
+        <!-- <div class="top-module">
+            <a target='_blank' href="https://github.com/boydx/inside-outside">Repo</a>
+        </div> -->
+        <div class="slides">
+            <section data-pre-load data-background-image="images/background-0.jpg" data-background-opacity="0.3">
+                <span class="title-font">GIAC Presentation</span>
+                <h5 class="sub-title-font">October, 21, 2026</h5>
+                <!-- <h4>@<a href="https://boyd.xyz/u" target="_blank">boyd.xyz/u</a></h4> -->
+                <!-- <h2>Welcome</h2> -->
+                <!-- <div class="ll" >
+                    Kentucky GIS Conference
+                    Oblique image of downtown Louisville. Find more
+                    <a href="https://boydx.github.io/phase-3-oblique-centroids" target="_blank">Ky obliques</a>
+                </div> -->
+                <!-- <div class='lr'>October 21, 2026</div> -->
+            </section>
+            <section data-background-image="images/background-0.jpg" data-background-opacity="0.3">
+                <h3>US Army Corp of Engineers Campground and RV Park Data Request</h3>
+            </section>
+
+            <section class="left" data-background-image='./images/background-0.jpg' data-background-opacity="0.2">
+                <h3 class="r-fit">Emergency Action Plans</h3>
+                <ul>
+                    <li class="fragment">USACE reached out via KY NFIP</li>
+                    <li class="fragment">to identify campgrounds & RV parks</li>
+                    <li class="fragment">and develop EAPs in the event of a natural disaster.</li>
+                </ul>
+            </section>
+
+            <section class="left" data-background-image='./images/background-0.jpg' data-background-opacity="0.2">
+                <h3 class="r-fit">Challenge</h3>
+                <ul>
+                    <li class="fragment">A list of private campgrounds & RV parks?</li>
+                    <li class="fragment">Ky Department of Tourism</li>
+                    <li class="fragment">maintains such a <a href="https://www.kentuckytourism.com/trip-planning/where-to-stay/campgrounds-and-rv-parks" target="_blank">list</a>.</li>
+                    <li class="fragment">Then, wrangled 344 locations into a <a href="https://boydx.github.io/campgrounds/" target="_blank">point layer</a>.</li>
+                </ul>
+            </section>
+
+            <section class="left" data-background-image='./images/background-0.jpg' data-background-opacity="0.2">
+                <h3 class="r-fit">Compilation</h3>
+                <ul>
+                    <li class="fragment">Combine with state & federal data (3.9k points)</li>
+                    <li class="fragment">and overlay FEMA DFIRM flood hazard data.</li>
+                    <li class="fragment">Share <a href="https://kygeonet.maps.arcgis.com/apps/mapviewer/index.html?webmap=553f8117eb8144d6ab562a8465aafb04" target="_blank">map and data</a>.</li>
+                </ul>
+            </section>
+
+            <section class="left" data-background-image='./images/background-0.jpg' data-background-opacity="0.2">
+                <h3 class="r-fit">Lessons Learned</h3>
+                <ul>
+                    <li class="fragment">Interagency collaboration is key.</li>
+                    <li class="fragment">Combinations of data are essential for effective decision-making.</li>
+                </ul>
+            </section>
+
+
+            <section data-background-image='./images/background.jpg' data-background-opacity="0.2">
+                <h3>Annual National Land Cover Database & the Land Cover Explorer</h3>
+            </section>
+
+            <section data-background-image='./images/NLCD-orig.png' 
+            data-background-size="contain"
+                data-background-color="#aaa"data-background-opacity="1">
+                <!-- <h3 class="item-title-block fragment"><a href="https://ky.app.box.com/s/26f4o308m41jgs4a2pv2kvmy3fcesv98" target="_blank">Change</a></h3> -->
+            </section>
+
+            <!-- <section class="left" data-background-image='./images/NLCD_metric_spotlight_infographic_small_2025.jpg' 
+            data-background-size="contain"
+                data-background-color="#fff"data-background-opacity="1">
+            </section> -->
+
+            
+
+            <section class="left" data-background-image='./images/background.jpg' data-background-opacity="0.2">
+                <h3 class="r-fit">NLCD</h3>
+                <ul>
+                    <li class="fragment">USGS National Land Cover Database <a href="https://www.usgs.gov/centers/eros/science/national-land-cover-database" target="_blank">🔗</a></li>
+                    <!-- <li class="fragment">derived from Landsat imagery</li>
+                    <li class="fragment">categorizing land cover into 16 classes.</li> -->
+                    <li class="fragment">Nine versions have been created (2001-2021)</li>
+                    <li class="fragment">each version is comparable to the others</li>
+                    <li class="fragment">but now they are legacy data.</li>
+                </ul>
+            </section>
+
+            <!-- <section data-background-opacity="1" data-background-size="contain"
+                data-background-iframe='https://www.youtube.com/embed/mLCw-Wy2_Jg?si=YVrY2Q144eUZgurn&amp;start=1660'>
+            </section> -->
+
+            <section class="left" data-background-image='./images/background.jpg' data-background-opacity="0.2">
+                <h3 class="r-fit">Annual NLCD</h3>
+                <ul>
+                    <li class="fragment">Annual version starting in 1985 <a href="https://www.usgs.gov/centers/eros/science/annual-national-land-cover-database" target="_blank">🔗</a></li>
+                    <li class="fragment">uses ensemble of deep learning models</li>
+                    <li class="fragment">each version is comparable to the others</li>
+                    <li class="fragment">but not to legacy data.</li>
+                </ul>
+            </section>
+
+            <section class="left" data-background-image='./images/background.jpg' data-background-opacity="0.2">
+                <h3 class="r-fit">KyRaster REST Services</h3>
+                <ul>
+                    <li class="fragment">New Thematic Services <a href="https://kyraster.ky.gov/arcgis/rest/services/ThematicServices" target="_blank">🔗</a></li>
+                    <li class="fragment">Project to Ky Single Zone</li>
+                    <li class="fragment">with three raster functions</li>
+                    <li class="fragment">and full-size export capability.</li>
+                    <li class="fragment">LYRX Files <a href="https://ky.box.com/v/ky-layerfile-lyrx" target="_blank">🔗</a></li>
+                </ul>
+            </section>
+
+            <section class="left" data-background-image='./images/background.jpg' data-background-opacity="0.2">
+                <h3 class="r-fit">Raster source files</h3>
+                <ul>
+                    <li class="fragment">Folder of TIFFs <a href="https://ky.box.com/s/bdkw3dwnavl1yxrwzuy5sz7upp6av3om" target="_blank">🔗</a></li>
+                    <li class="fragment">FGDBs <a href="https://ky.box.com/s/gx1o9dwd8gp0q86q4qrk9qv9vrx2okqj" target="_blank">🔗</a></li>
+                </ul>
+            </section>
+
+            <section class="left" data-background-image='./images/background.jpg' data-background-opacity="0.2">
+                <h3 class="r-fit">Land Cover Explorer</h3>
+                <ul>
+                    <li class="fragment">Geoprocessing Service</li>
+                    <li class="fragment">calculates statistics for two years</li>
+                    <li class="fragment">compares and returns the results as JSON.</li>
+                    <li class="fragment">Web application <a href="https://kygeonet.ky.gov/LandcoverExplorer/" target="_blank">🔗</a></li>
+                </ul>
+            </section>
+
+
+            <section data-pre-load data-background-image='./images/background.jpg' data-background-opacity="0.4">
+                <h3>Thank you!</h3>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://uky-gis.github.io/geo509/slides/dist/reveal.js"></script>
+    <script src="https://uky-gis.github.io/geo509/slides/dist/plugin/notes/notes.js"></script>
+    <script src="https://uky-gis.github.io/geo509/slides/dist/plugin/markdown/markdown.js"></script>
+    <script src="https://uky-gis.github.io/geo509/slides/dist/plugin/highlight/highlight.js"></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+            backgroundTransition: "fade",
+            // Transition style
+            transition: "fade", // none/fade/slide/convex/concave/zoom
+
+            // Transition speed
+            transitionSpeed: "fast", // default/fast/slow
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+        });
+    </script>
+</body>
+
+</html>
